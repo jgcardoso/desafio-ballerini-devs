@@ -1,0 +1,66 @@
+
+.hero {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 0;
+}
+
+.hero::after {
+  position: absolute;
+  left: -150px;
+  top: 0;
+  width: 600px;
+  height: 100%;
+  background-image: url('./../images/blobs.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  content: '';
+  z-index: -1;
+}
+
+.heroGrid {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 165px);
+  font-family: 'Overpass', sans-serif;
+}
+
+.heroGrid > div {
+  position: relative;
+  top: -50px;
+  flex: 1;
+}
+
+.heroText {
+  max-width: 560px;
+}
+
+.heroText h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #D2D2D2;
+  margin-bottom: 15px;
+}
+
+.heroText p {
+  font-size: 24px;
+  color: #A9A9A9;
+  margin-bottom: 60px;
+}
+
+.heroBtn {
+  position: relative;
+}
+
+.heroBtn::after {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #27AE60;
+  content: '';
+}

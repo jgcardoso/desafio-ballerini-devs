@@ -1,0 +1,25 @@
+
+.header {
+  padding: 60px 0;
+  position: relative;
+}
+
+.headerLogo {
+  text-align: center;
+}
+
+.headerIconsList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.headerIcons {
+  position: absolute;
+  left: 0;
+  top: 55px;
+}
+
+.headerIconsList li:not(:first-child) {
+  margin-left: 25px;
+}
